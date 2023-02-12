@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-your favorite music is here</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="./spotify-logo-png-7078.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>music</li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <div class="songlist">
+            <h1>List of best songs</h1>
+        </div>
+
+
+        <div class="songitem">
+            <img alt="no error">
+            <span class="songname">Let me love you</span>
+            <span class="songlistplay"><span class="timestamp">05:34 <i id="0" class="far songitemplay fa-2x fa-play-circle"> </i></span></span>
+        </div>
+
+        <div class="songitem">
+            <img alt="error">
+            <span class="songname">Piya aye na</span>
+            <span class="songlistplay"><span class="timestamp">05:34 <i id="1" class="far songitemplay fa-2x fa-play-circle"> </i></span></span>
+        </div>
+        <div class="songitem">
+            <img alt="error">
+            <span class="songname">bewajah nahi milna tera mera</span>
+            <span class="songlistplay"><span class="timestamp">05:34 <i id="2" class="far songitemplay fa-2x fa-play-circle"> </i></span></span>
+        </div>
+        <div class="songitem">
+            <img alt="error">
+            <span class="songname">chak de india</span>
+            <span class="songlistplay"><span class="timestamp">05:34 <i id="3" class="far songitemplay  fa-2x fa-play-circle"> </i></span></span>
+        </div>
+
+        <div class="songBanner"></div>
+    </div>
+    <div class="bottom">
+        <!-- <img src="./5uwq.gif" alt=""> -->
+        <input type="range" name="range" id="myprogressbar" min="0" max="100">
+        <div class="icons">
+            <i class="fa-solid fa-3x fa-backward-fast" id="previous"></i>
+
+
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fa-solid fa-3x fa-forward-fast" id="next"></i>
+        </div>
+        <div class="songinfo">
+            <img src="./5uwq.gif" width="82px" alt="" id="gif"> <span id="masterSongName"></span>
+        </div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/e15cae0301.js" crossorigin="anonymous"></script>
+    <script src="java.js"></script>
+
+
+</body>
+
+</html>

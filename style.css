@@ -1,0 +1,146 @@
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        background-color: rgb(191, 184, 197);
+        display: block;
+    }
+    
+    .brand img {
+        height: 60px;
+        width: 65px;
+        padding: 0px 4px;
+    }
+    
+    .brand {
+        display: flex;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 2.3rem;
+    }
+    
+    .brand:hover {
+        color: brown;
+    }
+    
+    nav {
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+        height: 75px;
+        background-color: black;
+        margin: 2px;
+        align-items: center;
+    }
+    
+    nav ul li {
+        color: white;
+        padding: 12px;
+    }
+    
+    .container {
+        min-height: 57vh;
+        background-color: black;
+        color: rgb(245, 7, 233);
+        font-family: 'Ubuntu', sans-serif;
+        display: flex;
+        flex-direction: column;
+        margin: 23px auto;
+        width: 80%;
+        border-radius: 12px;
+        padding: 34px;
+        background-image: url("./pexels-hasan-albari-1150988.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .bottom {
+        position: sticky;
+        height: 100px;
+        background-color: black;
+        color: white;
+        bottom: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #myprogressbar {
+        width: 80vw;
+        cursor: pointer;
+    }
+    
+    .far {
+        color: rgb(60, 211, 0);
+    }
+    
+    .icons {
+        margin-top: 14px;
+    }
+    
+    .icons i {
+        cursor: pointer;
+        padding: 3px;
+    }
+    
+    .songitem {
+        height: 50px;
+        display: flex;
+        background-color: rgb(2, 2, 2);
+        width: 50%;
+        color: rgb(255, 254, 254);
+        margin: 12px 0;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 34px;
+        border: 3px solid white;
+    }
+    
+    .songitem img {
+        height: 55px;
+        margin: 0 23px;
+        border-radius: 34px;
+    }
+    
+    .timestamp {
+        margin: 0 23px;
+    }
+    
+    .timestamp i {
+        cursor: pointer;
+    }
+    /* .bottom img {
+    height: 25px;
+    width: 10%;
+} */
+    
+    .songinfo {
+        position: absolute;
+        left: 10vw;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    .songinfo img {
+        opacity: 0;
+        transition: opacity 0.4s ease-in;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .songname {
+            font-size: 10px
+        }
+        .songitem {
+            width: 75%;
+        }
+        #masterSongName {
+            display: none;
+        }
+    }
